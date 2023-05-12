@@ -2,7 +2,7 @@
 external: false
 title: "Voyage of the Black Kraken"
 description: "You can author content using the familiar markdown syntax you already know. All basic markdown syntax is supported."
-date: 2022-11-02
+date: 2023-05-03
 ---
 
 The crew of the Black Kraken sailed through the Astral Sea, their ship flying between the stars like a black ghost. The sea of endless possibilities stretched out around them, and the crew felt the exhilaration of adventure as they scanned the horizon for their next target.
