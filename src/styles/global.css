@@ -53,8 +53,8 @@
         --color-primary-green: 190 242 100;
         /* Custom #FFDE69 */
         --color-primary-yellow: 255 222 105;
-
-        --color-primary-violet: 46 16 101;
+        /** Custom #9400FF */
+        --color-primary-violet: 148 0 255;
 
         /* tailwind slate-300 */
         --color-text-body: 203 213 225;
@@ -72,6 +72,7 @@
         --color-text-selection: 0 0 0;
 
         /* Tailwind slate-900 #0f172a */
+        /* #2e1065 */
         --color-bg-body: 46 16 101;
         /* Tailwind sky-500 #0ea5e9 */
         --color-bg-code: 14 165 233;
