@@ -1,6 +1,6 @@
 /* eslint-disable turbo/no-undeclared-env-vars */
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 
 /* 
   We are doing some URL mumbo jumbo here to tell Astro what the URL of your website will be.
@@ -29,9 +29,7 @@ if (isBuild) {
 export default defineConfig({
   server: { port: SERVER_PORT },
   site: BASE_URL,
-  integrations: [
-    tailwind({
-      applyBaseStyles: false,
-    }),
-  ],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
