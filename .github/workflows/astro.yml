@@ -29,13 +29,14 @@ jobs:
 
       - name: Install, build, and upload your site
         uses: withastro/action@v2
-        # with: # ← optional inputs
+        with: # ← optional inputs
         #   path: . # The root location of your Astro project inside the repository. (default = .)
-        #   node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (Node v20 is strongly recommended)
+          node-version: 22.22.0 # Astro 7 requires Node >=22.22.0; this action defaults to 20.
         #   package-manager: pnpm@latest # If you use something other than pnpm (npm, yarn, bun...)
         #   build-command: pnpm run build -- --site https://myusername.github.io/my-blog/
 
   deploy:
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     needs: build
     runs-on: ubuntu-latest
     environment:

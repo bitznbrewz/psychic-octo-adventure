@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.cjs";
 
 /* 
     Tailwind colors listed here: https://tailwindcss.com/docs/customizing-colors
@@ -100,6 +99,12 @@
     h5,
     h6 {
         font-family: theme('fontFamily.heading');
+    }
+
+    /* Tailwind 4 preflight resets buttons to cursor: default */
+    button:not(:disabled),
+    [role="button"]:not(:disabled) {
+        cursor: pointer;
     }
 }
 

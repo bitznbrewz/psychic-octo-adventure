@@ -5,8 +5,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ["Space Grotesk", "sans-serif"],
-        heading: ["Space Grotesk", "sans-serif"],
+        // Strings, not arrays: Tailwind 4's theme() keeps only the first array entry.
+        body: '"Space Grotesk", sans-serif',
+        heading: '"Space Grotesk", sans-serif',
       },
       colors: {
         transparent: "transparent",
